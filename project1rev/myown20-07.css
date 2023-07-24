@@ -1,0 +1,246 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+header{
+    padding: 3px 0px;
+    padding-bottom: 0px;
+    background-color:#001660;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;  
+    width: 100%;
+}
+.display{/*marque tage styling*/
+    font-size: 25px;
+    font-weight: bolder;
+    word-spacing: 15px;
+    background-color: #001660;
+    color: white;   
+}
+nav{          
+        font-size: 23px;
+        color: aliceblue;
+        background-color: #001660;
+        font-weight: bold;
+        width: 100%;
+        display: flex;
+        height: 40px;
+        justify-content: space-evenly;
+        align-items: center;
+}
+a{
+    color: aliceblue;
+    display: inline-flex;
+    flex-direction: row;
+    text-decoration: none;    
+}
+.text{
+    padding-bottom: 10px;
+    line-height: 35px;
+    text-indent: 50px;
+    word-spacing: 20px;
+    text-align: start;
+    
+}
+@media (max-width:426px){/*mediya quarry for home bage */
+    nav{
+        flex-direction: column;
+        height: 200px; 
+             
+    }
+    header{
+        display: none;
+    }
+    .text{
+        text-align: center;
+    }
+    section{
+        margin-top: 10px;
+        display: inline-block;
+    }
+    .image img{
+        display: none;
+    }
+    section{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}         /*media quarry for home bage end*/
+a:hover{
+    font-size: 30px;
+}
+section{
+   color: #001660;
+   padding-top:250px;
+   line-height: 30px;
+   display: flex;
+   flex-direction: column;   
+}
+.image{
+    display: flex;
+    flex-direction: row;
+    padding-left: 55px;
+
+}
+.loging{
+    color: white;
+    background-color: #001660;    
+    padding: 100px 100px;
+    width: 500px;
+    height: 500px;
+    margin-left: 150px;
+    
+}
+button{
+    padding: 5px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    border: 3px solid #001660;
+     border-radius: 5px; background-color:white;color: #001660;
+}
+
+.relative{      
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color: #001660;    
+}
+
+/* home bage complited about bage start */
+.former{
+
+    border:3px solid #001660;
+    
+    color: #001660;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 55px;
+    text-align: center; 
+    
+}
+article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+}
+table{
+    margin-top: 15px ;
+    height: 50%vh;
+}
+table,tr,th,td{
+    border: 2px solid #001660;
+    text-align: center;
+    border-collapse: collapse;
+    padding: 20px 20px;    
+    color: #001660;
+}
+
+@media (max-width:426px){/*media quary for about page*/
+    article{
+        flex-direction: column;       
+    }
+    .former{
+        width: 100%;
+    }
+}
+/* purchase page start */
+.login{
+    color: #001660;
+}
+aside{
+    display: flex;
+    justify-content: center;
+}
+/* Enquiry bage start */
+.complaint{
+    background-color: #001660;
+    color: white;
+    display: flex;
+    padding: 20px 100px;
+}
+.Enquiry{
+    background-color:white;
+    color:#001660;
+    flex-direction: column;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 40px ;
+    padding-left: 90px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 90px;
+    
+}
+/* media quarry for enquirty page */
+@media (max-width:426px){
+    footer{
+        flex-direction: column;
+    } 
+    .Enquiry{
+        padding-left: 20px;
+    }
+}
+/* complaint page start */
+sup{
+    color: red;
+}
+.question{
+    margin-left: 500px;
+    line-height: 30px;
+    width: 30%;
+    border: 3px solid #001660;
+    text-align: center;
+    word-spacing: 10x;
+    color: #001660;
+    margin-top: 130px;
+}
+/* media quary for compliant page */
+@media (max-width:728px) {
+    .question{
+        width: 100%;
+    }
+    
+}
+/* contact page start */
+.contact{
+    display: flex;
+    text-align: center;
+    justify-content:space-evenly;
+    flex-direction: row;
+    padding: 100px;
+    line-height: 50px;
+    color: #001660;
+}
+.one{
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+}
+.tw{
+    align-items: center;
+    display: flex;
+    font-size: 40px;
+    flex-direction: column;
+    margin-top: 90px;
+    
+    
+}
+.three{
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+}
